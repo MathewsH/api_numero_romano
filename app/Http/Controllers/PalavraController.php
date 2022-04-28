@@ -18,6 +18,7 @@ class PalavraController extends Controller
 
         $Array = [];
         $valor=0;
+
         $condicao = 0;
         $number1= [];
         $arrayRO = [];
@@ -37,6 +38,7 @@ class PalavraController extends Controller
                         }
 
                         else{
+
                             $valor += $ValorRo[$a];
                             $condicao =0;
                         }
@@ -52,6 +54,7 @@ class PalavraController extends Controller
                 array_push($arrayValor, $valor);
                 $arrayRO= [];
                 $valor =0;
+                $condicao =0;
                 continue;
 
             }
@@ -60,6 +63,7 @@ class PalavraController extends Controller
                 array_push($arrayValor, $valor);
                 $arrayRO= [];
                 $valor =0;
+                $condicao =0;
                 continue;
             } 
         }
